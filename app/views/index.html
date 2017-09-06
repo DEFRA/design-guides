@@ -9,31 +9,23 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
+      {% include "includes/phase_banner_alpha.html" %}
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        Defra Digital Delivery Guidance
+      </h1>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+      <h2 class="heading-medium">About this prototype</h2>
 
-      <h2 class="heading-medium">About this page</h2>
+      <p>The purpose of this prototype is provide Defra with guidance on how to deliver digital services. This will be done by bringing together existing digital delivery processes and governance into a single place to create a digital delivery lifecycle.</p>
+      <p>The prototype will be iterated and improved through collaboration, evidence and insight from user research and usability testing.</p>
+      <p>The prototype is NOT a replacement of the GDS <a href="https://www.gov.uk/service-manual">Service Design Manual</a> and will link to existing information as much as possible.
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+      <h2 class="heading-medium">Prototypes</h2>
 
-			<h2 class="heading-medium">Examples and documentation</h2>
-
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
+      <ul class="list list-bullet">
+        <li><a href="/prototypes/digital-delivery-lifecycle">Digital Delivery Lifecycle - Iteration 1</a></li>
+      </ul>
 
       <h2 class="heading-medium">Other resources</h2>
 
@@ -45,7 +37,7 @@
 				</li>
 				<li>
 					<a href="https://www.gov.uk/service-manual">
-						Service design manual
+						Service Design Manual
 					</a>
 				</li>
 				<li>
@@ -60,5 +52,3 @@
 </main>
 
 {% endblock %}
-
-
