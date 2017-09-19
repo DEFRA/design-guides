@@ -1,54 +1,87 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  Service Lifecycle Prototype
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li>
+    </ol>
+  </div>
+
   <div class="grid-row">
     <div class="column-two-thirds">
-      {% include "includes/phase_banner_alpha.html" %}
 
       <h1 class="heading-xlarge">
-        Defra Digital Delivery Guidance
+        {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <h2 class="heading-medium">About this prototype</h2>
+      <h2 class="heading-medium">Why we need a service lifecycle</h2>
 
-      <p>The purpose of this prototype is provide Defra with guidance on how to deliver digital services. This will be done by bringing together existing digital delivery processes and governance into a single place to create a digital delivery lifecycle.</p>
-      <p>The prototype will be iterated and improved through collaboration, evidence and insight from user research and usability testing.</p>
-      <p>The prototype is NOT a replacement of the GDS <a href="https://www.gov.uk/service-manual">Service Design Manual</a> and will link to existing information as much as possible.
+      <p>
+        To support the opportunities of digital technologies and agile working practices, we need to re-focus how we deliver change. We need to move away from the traditional
+        ‘project’ approach, where we come up with an idea a solution, we add it to a list, the list is prioritised with everything else on the list and then we seek funding and
+        people to deliver the idea or solution. Technology is moving at a fast pace and is providing different ways of interacting with customers, delivering their needs and collecting data.
+      </p>
 
-      <h2 class="heading-medium">Prototypes</h2>
+      <h2 class="heading-medium">What it means</h2>
+
+      <p>We are organising ourselves around what the user needs to do, for example, going fishing, manage waste, use water or keep animals.</p>
+      <p>We are understanding the policy outcomes and the reason why we ask the user to do what we ask them to do.</p>
+      <p>We are creating multi-disciplinary teams that support the different lens or view of the service.</p>
+
+      <h2 class="heading-medium">We frame problems around a service so we can:</h2>
 
       <ul class="list list-bullet">
-        <li><a href="/prototypes/digital-delivery-lifecycle">Digital Delivery Lifecycle - Iteration 1</a></li>
+        <li>Simplify</li>
+        <li>Cut down on governance</li>
+        <li>Stop doing things we don't need to do</li>
       </ul>
 
-      <h2 class="heading-medium">Other resources</h2>
+      <h2 class="heading-medium">Benefits of having a service lifecycle:</h2>
 
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service Design Manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
+      <ul class="list list-bullet">
+        <li>Reduced start up costs</li>
+        <li>Maximising knowledge of the service team</li>
+        <li>Respond to changing priorities to maximise value for us and the end user</li>
+        <li>Collaborative working creates opportunities to be innovative and reduce waiting times</li>
+        <li>Business and technology changes are a continuum</li>
+        <li>Deliver small changes with big value</li>
+        <li>Supporting the macro economic view</li>
+      </ul>
+
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">About this prototype</h2>
+        <p>The Service Lifecycle is NOT a replacement of the GDS <a href="https://www.gov.uk/service-manual">Service Design Manual</a> and will make links to existing guidance where possible.</p>
+        <h2 class="heading-medium">Prototypes</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul>
+            <li><a href="/prototypes/service-lifecycle">Service lifecycle - iteration 1</a></li>
+          </ul>
+        </nav>
+      </aside>
 
     </div>
   </div>
+
 </main>
 
 {% endblock %}
