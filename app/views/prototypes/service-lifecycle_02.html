@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Service Lifecycle
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+  {% include "includes/breadcrumb.html" %}
+
+  <h1 class="heading-xlarge">
+    Service Lifecycle
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="bold-medium">Who is the service lifecycle for?</h2>
+
+      <p>The service lifecycle is guidance for people who own, deliver or work on digital services that strive to meet the needs of users and outcomes of our organisation.</p>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-quarter">
+
+      <a href="/prototypes/understand/understand"><h2 class="bold-medium">Understand</h2></a>
+
+      <h3 class="heading-small">
+        Understand the problem
+      </h3>
+
+      <p>
+        Investigate and understand the actual problem that needs to be solved, from a user’s perspective.
+      </p>
+
+    </div>
+    <div class="column-quarter">
+
+      <a href="/prototypes/deliver/deliver"><h2 class="bold-medium">Deliver</h2></a>
+
+      <h3 class="heading-small">
+        Agile delivery
+      </h3>
+
+      <p>
+        Use agile delivery methods to create and launch a service that is simple to use and intuitive, so that users succeed the first time.
+      </p>
+
+    </div>
+    <div class="column-quarter">
+
+      <a href="/prototypes/improve/improve"><h2 class="bold-medium">Improve</h2></a>
+
+      <h3 class="heading-small">Making services better</h3>
+
+      <p>
+        Continuously measure and improve the performance of a service to ensure it is delivering the required outcomes.
+      </p>
+
+    </div>
+    <div class="column-quarter">
+
+      <a href="/prototypes/retire/retire"><h2 class="bold-medium">Retire</h2></a>
+
+      <h3 class="heading-small">End of service</h3>
+
+      <p>
+       What to do if a product or service is no longer delivering organisational outcomes.
+      </p>
+
+    </div>
+  </div>
+
+
+
+</main>
+{% endblock %}
